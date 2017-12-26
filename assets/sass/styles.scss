@@ -1,0 +1,85 @@
+$color-accent: #007BFF;
+$bg-inverse: #1B242F;
+$padding-ul: 1.2em;
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Titulo verder
+span.content-title {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background: $color-accent;
+    color: #fff;
+    position: relative;
+    &:before {
+        $width: 16px;
+        content: "";
+        position: absolute;
+        width: $width;
+        height: $width;
+        bottom: -5px;
+        background: $color-accent;
+        transform: rotate(45deg);
+    }
+}
+
+// #1 Biografia
+.content-1 {
+    // Reset todos los UL
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+        }
+    }
+    // Imagen de perfil
+    // img {}
+}
+
+// #2 Biografia
+.content-2 {
+    .card {
+        background: $bg-inverse;
+        .icon {
+            $size: 70px;
+            width: $size;
+            height: $size;
+            line-height: $size;
+            text-align: center;
+            font-size: 2em;
+            color: $bg-inverse;
+        }
+        .text-training {
+            font-size: 0.9em;
+        }
+    }
+}
+
+// #3 Biografia
+.content-3 {
+
+}
+
+// #4 Biografia
+.content-4 {
+
+}
+
+// #5 Biografia
+.content-5 {
+
+}
+
+// #6 Biografia
+.content-6 {
+
+}
+
+// #7 Biografia
+.content-7 {
+
+}

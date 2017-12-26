@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curriculum Vitae</title>
+    <title>Portafolio de Eder Marcos</title>
 
     <!-- CSS Bootsrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- CSS Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!-- CSS Iconos -->
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Navbar de las secciones de la pagina -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container justify-content-between">
             <a class="navbar-brand" href="#">
-                <img src="/assets/images/icon-cv.png" width="30" height="30" alt="">
+                <img src="/assets/images/icon-cv.png" width="30" height="30" alt="Icono-pagina">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar-content">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Inicio <span class="sr-only">Inicio</span></a>
@@ -39,19 +46,230 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portafolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Carousel => demostracion de algunos proyectos personales -->
+    <div class="container p-0 px-sm-3">
+        <div id="carousel-content-indicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-content-indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-content-indicators" data-slide-to="1"></li>
+                <li data-target="#carousel-content-indicators" data-slide-to="2"></li>
+                <li data-target="#carousel-content-indicators" data-slide-to="3"></li>
+                <li data-target="#carousel-content-indicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="http://lorempixel.com/1110/450/city" alt="Slide #1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://lorempixel.com/1110/450/sports" alt="Slide #2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://lorempixel.com/1110/450/nature" alt="Slide #3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://lorempixel.com/1110/450/nightlife" alt="Slide #4">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://lorempixel.com/1110/450/abstract" alt="Slide #5">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-content-indicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-content-indicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col">
-                Hola mundoaaaa
+    <div class="container">
+        <!-- #1 Biografia -->
+        <div class="row content-1">
+            <div class="col my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row p-0 p-md-4">
+                            <div class="col-md-8 align-self-center order-sm-3 order-md-2">
+                                <span class="content-title mb-2">
+                                    Biografia
+                                </span>
+                                <h2 class="font-weight-light">Desarrollador Web y Móvil</h3>
+                                <hr>
+
+                                <ul class="information">
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Nombre</div>
+                                        <div class="col">Jose Eder</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Apellidos</div>
+                                        <div class="col">Marcos Lara</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Licenciatura</div>
+                                        <div class="col">Lic. Ciencias Computacionales</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Telefono</div>
+                                        <div class="col">(045) 771-295-0501</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Correo</div>
+                                        <div class="col">eder.marcos.contact@gmail.com</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Direccion</div>
+                                        <div class="col">Av. Pascual Alcocer Vega #231, int #49, Colonia Villas de Santiago, Qro</div>
+                                    </li>
+                                    <li class="row mb-2  align-items-center">
+                                        <div class="col-auto font-weight-bold">Código Postal</div>
+                                        <div class="col">76148</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0 align-self-center order-sm-2 order-md-3">
+                                <img src="http://lorempixel.com/800/800/nature" alt="Imagen perfil" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
+
+        <!-- #2 Formacion -->
+        <div class="row justify-content-center content-2 text-white">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row p-0 p-md-4">
+                            <div class="col-12 text-center">
+                                <span class="content-title mb-2">
+                                    ¿Donde estudié?
+                                </span>
+                                <h2 class="font-weight-light">Formación</h3>
+                                <hr class="bg-light">
+                            </div>
+
+                            <div class="col-md-6 mt-5 mt-md-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        <div class="icon bg-white rounded-circle">
+                                            <i class="icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-justify">
+                                        <h4>Primaria</h4>
+                                        <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-5 mt-md-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        <div class="icon bg-white rounded-circle">
+                                            <i class="icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-justify">
+                                        <h4 class="text-white">Secundaria</h4>
+                                        <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-5 mt-md-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        <div class="icon bg-white rounded-circle">
+                                            <i class="icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-justify">
+                                        <h4 class="text-white">Preparatoria</h4>
+                                        <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-5 mt-md-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-auto">
+                                        <div class="icon bg-white rounded-circle">
+                                            <i class="icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-justify">
+                                        <h4 class="text-white">Universidad</h4>
+                                        <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #3 Habilidades -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-12 text-center my-3">
+                <h2 class="font-weight-light">Habilidades</h3>
+            </div>
+        </div> -->
+
+        <!-- #4 Experiencia -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-12 text-center my-3">
+                <h2 class="font-weight-light">Experiencia</h3>
+            </div>
+        </div> -->
+
+        <!-- #5 Portafolio -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-12 text-center my-3">
+                <h2 class="font-weight-light">Portafolio</h3>
+            </div>
+        </div> -->
+
+        <!-- #6 Contacto -->
+        <!-- <div class="row justify-content-center">
+            <div class="col-12 text-center my-3">
+                <h2 class="font-weight-light">Contacto</h3>
+            </div>
+            <div class="col-md-8">
+                <form action="#" method="post">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre:">
+                        </div>
+                        <div class="col-12 col-md mt-3 mt-md-0">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Correo:">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" placeholder="Mensaje:" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Archivos JS bootstrap -->
