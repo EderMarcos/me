@@ -56,6 +56,11 @@ span.content-title {
             text-align: center;
             font-size: 2em;
             color: $bg-inverse;
+            i {
+                &:before {
+                    margin-left: 0;
+                }
+            }
         }
         .text-training {
             font-size: 0.9em;
@@ -159,5 +164,25 @@ span.content-title {
 
 // #6 Contacto
 .content-6 {
-
+    $size-social: 100px;
+    &__fb, &__tw, &__in {
+        height: $size-social;
+        width: $size-social;
+        border-radius: 50%;
+        text-align: center;
+        .icon {
+            line-height: $size-social;
+            font-size: 2.5em;
+            color: #fff;
+        }
+    }
+    &__fb {
+        background: #4267B2;
+    }
+    &__tw {
+        background: #1DA1F2;
+    }
+    &__in {
+        background: #0077B5;
+    }
 }
