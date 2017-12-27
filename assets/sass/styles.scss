@@ -186,3 +186,17 @@ span.content-title {
         background: #0077B5;
     }
 }
+
+@media screen and (max-width: 740px) {
+    .content-6 {
+        $size-social: 70px;
+        &__fb, &__tw, &__in {
+            height: $size-social;
+            width: $size-social;
+            .icon {
+                line-height: $size-social;
+                font-size: 2em;
+            }
+        }
+    }
+}
