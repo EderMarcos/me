@@ -26,6 +26,10 @@ span.content-title {
     }
 }
 
+.bg-inverse {
+    background: $bg-inverse;
+}
+
 // #1 Biografia
 .content-1 {
     // Reset todos los UL
@@ -40,7 +44,7 @@ span.content-title {
     // img {}
 }
 
-// #2 Biografia
+// #2 Formacion
 .content-2 {
     .card {
         background: $bg-inverse;
@@ -59,27 +63,101 @@ span.content-title {
     }
 }
 
-// #3 Biografia
+// #3 Habilidades
 .content-3 {
-
+    .name, .label {
+        letter-spacing: 3px;
+    }
+    .description {
+        letter-spacing: 1px;
+    }
+    .progress {
+        $progress-size: 20px;
+        height: $progress-size;
+        border-radius: 0;
+        background: rgba(27, 36, 47, 0.2);
+        .progress-bar {
+            height: $progress-size;
+            line-height: $progress-size;
+        }
+    }
+    img {
+        object-fit: cover;
+        height: 180px;
+        width: 180px;
+        overflow: hidden;
+    }
 }
 
-// #4 Biografia
+// #4 Experiencia
 .content-4 {
+    $side-size: 1.5em;
 
+    &__date {
+        margin-top: $side-size / 2;
+        background: #fff;
+        color: #000;
+    }
+
+    &__icon {
+        position: relative;
+        .border-y {
+            position: absolute;
+            width: 1px;
+        }
+        .icon-content {
+            position: absolute;
+            z-index: 10;
+            $icon-size: 50px;
+            height: $icon-size;
+            width: $icon-size;
+            background: #fff;
+            text-align: center;
+            .icon {
+                line-height: $icon-size;
+                color: $bg-inverse;
+                font-size: 1.5em;
+            }
+        }
+    }
+    &__description {
+        $bg-border: rgba(122, 122, 122, 0.4);
+        $bg-text: #7A7A7A;
+        position: relative;
+        display: flex;
+        &:before {
+            content: "";
+            width: $side-size;
+            height: $side-size;
+            position: absolute;
+            background: #fff;
+            left: -$side-size / 2;
+            transform: rotate(45deg);
+            align-self: center;
+        }
+        a {
+            text-decoration: none;
+            color: $bg-inverse;
+            p {
+                color: $bg-text;
+                margin: 0;
+            }
+            span {
+                letter-spacing: 1px;
+                font-size: 0.9em;
+            }
+        }
+    }
 }
 
-// #5 Biografia
+// #5 Portafolio
 .content-5 {
-
+    .portafolio-content {
+        border-top: 2px solid $color-accent;
+    }
 }
 
-// #6 Biografia
+// #6 Contacto
 .content-6 {
-
-}
-
-// #7 Biografia
-.content-7 {
 
 }

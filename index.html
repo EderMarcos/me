@@ -20,7 +20,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container justify-content-between">
             <a class="navbar-brand" href="#">
-                <img src="/assets/images/icon-cv.png" width="30" height="30" alt="Icono-pagina">
+                <img src="/assets/images/icon-user.png" width="30" height="30" alt="Icono-pagina">
+                <span class="d-none d-md-inline-block">Curriculum Vitae</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@
     </nav>
 
     <!-- Carousel => demostracion de algunos proyectos personales -->
-    <div class="container p-0 px-sm-3">
+    <header class="container p-0">
         <div id="carousel-content-indicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-content-indicators" data-slide-to="0" class="active"></li>
@@ -90,55 +91,55 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+    </header>
 
-    <div class="container">
-        <!-- #1 Biografia -->
-        <div class="row content-1">
-            <div class="col my-3">
+    <main class="container">
+        <!-- #2 Biografia -->
+        <div class="row content-1 mt-4">
+            <div class="col p-0">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row p-0 p-md-4">
-                            <div class="col-md-8 align-self-center order-sm-3 order-md-2">
+                        <div class="row pl-0 pr-0 pt-4 pb-4 p-md-4">
+                            <div class="col-md-8 align-self-center">
                                 <span class="content-title mb-2">
-                                    Biografia
+                                    Datos personales
                                 </span>
-                                <h2 class="font-weight-light">Desarrollador Web y Móvil</h3>
+                                <h2 class="font-weight-light">Mi <span class="font-weight-bold">Biografia</span></h3>
                                 <hr>
 
                                 <ul class="information">
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Nombre</div>
+                                    <li class="row mb-3 align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Nombre</div>
                                         <div class="col">Jose Eder</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Apellidos</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Apellidos</div>
                                         <div class="col">Marcos Lara</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Licenciatura</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Licenciatura</div>
                                         <div class="col">Lic. Ciencias Computacionales</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Telefono</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Telefono</div>
                                         <div class="col">(045) 771-295-0501</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Correo</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Correo</div>
                                         <div class="col">eder.marcos.contact@gmail.com</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Direccion</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Direccion</div>
                                         <div class="col">Av. Pascual Alcocer Vega #231, int #49, Colonia Villas de Santiago, Qro</div>
                                     </li>
-                                    <li class="row mb-2  align-items-center">
-                                        <div class="col-auto font-weight-bold">Código Postal</div>
+                                    <li class="row mb-3  align-items-center">
+                                        <div class="col-12 col-md-auto font-weight-bold">Código Postal</div>
                                         <div class="col">76148</div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-4 mb-3 mb-md-0 align-self-center order-sm-2 order-md-3">
-                                <img src="http://lorempixel.com/800/800/nature" alt="Imagen perfil" class="img-fluid">
+                            <div class="col-md-4 mt-3 mb-mt-0 align-self-center">
+                                <img src="assets/images/profile.jpg" alt="Imagen perfil" class="img-fluid rounded">
                             </div>
                         </div>
                     </div>
@@ -146,12 +147,12 @@
             </div>
         </div>
 
-        <!-- #2 Formacion -->
-        <div class="row justify-content-center content-2 text-white">
-            <div class="col">
+        <!-- #3 Formacion -->
+        <div class="row justify-content-center content-2 text-white mt-4">
+            <div class="col p-0">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row p-0 p-md-4">
+                        <div class="row pl-0 pr-0 pt-4 pb-4 p-md-4">
                             <div class="col-12 text-center">
                                 <span class="content-title mb-2">
                                     ¿Donde estudié?
@@ -160,57 +161,57 @@
                                 <hr class="bg-light">
                             </div>
 
-                            <div class="col-md-6 mt-5 mt-md-3">
-                                <div class="row justify-content-between">
+                            <div class="col-md-6 mt-5">
+                                <div class="row justify-content-center justify-content-md-between">
                                     <div class="col-auto">
                                         <div class="icon bg-white rounded-circle">
                                             <i class="icon-briefcase"></i>
                                         </div>
                                     </div>
-                                    <div class="col-9 text-justify">
-                                        <h4>Primaria</h4>
+                                    <div class="col-md-9 text-justify">
+                                        <h4 class="text-center mt-3 mt-md-0">Primaria</h4>
                                         <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6 mt-5 mt-md-3">
-                                <div class="row justify-content-between">
+                            <div class="col-md-6 mt-5">
+                                <div class="row justify-content-center justify-content-md-between">
                                     <div class="col-auto">
                                         <div class="icon bg-white rounded-circle">
                                             <i class="icon-briefcase"></i>
                                         </div>
                                     </div>
-                                    <div class="col-9 text-justify">
-                                        <h4 class="text-white">Secundaria</h4>
+                                    <div class="col-md-9 text-justify">
+                                        <h4 class="text-center mt-3 mt-md-0">Secundaria</h4>
                                         <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6 mt-5 mt-md-3">
-                                <div class="row justify-content-between">
+                            <div class="col-md-6 mt-5">
+                                <div class="row justify-content-center justify-content-md-between">
                                     <div class="col-auto">
                                         <div class="icon bg-white rounded-circle">
                                             <i class="icon-briefcase"></i>
                                         </div>
                                     </div>
-                                    <div class="col-9 text-justify">
-                                        <h4 class="text-white">Preparatoria</h4>
+                                    <div class="col-md-9 text-justify">
+                                        <h4 class="text-center mt-3 mt-md-0">Preparatoria</h4>
                                         <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6 mt-5 mt-md-3">
-                                <div class="row justify-content-between">
+                            <div class="col-md-6 mt-5">
+                                <div class="row justify-content-center justify-content-md-between">
                                     <div class="col-auto">
                                         <div class="icon bg-white rounded-circle">
                                             <i class="icon-briefcase"></i>
                                         </div>
                                     </div>
-                                    <div class="col-9 text-justify">
-                                        <h4 class="text-white">Universidad</h4>
+                                    <div class="col-md-9 text-justify">
+                                        <h4 class="text-center mt-3 mt-md-0">Universidad</h4>
                                         <p class="text-training m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, beatae suscipit libero voluptatibus necessitatibus porro ipsa aliquam incidunt sunt. Debitis labore deleniti quidem illum eius dolorum facilis aspernatur eveniet nesciunt?</p>
                                     </div>
                                 </div>
@@ -222,30 +223,321 @@
         </div>
 
         <!-- #3 Habilidades -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-12 text-center my-3">
-                <h2 class="font-weight-light">Habilidades</h3>
+        <div class="row content-3 mt-4 align-items-center py-3">
+            <div class="col-md-4 text-center">
+                <img class="rounded-circle" src="assets/images/profile-single.jpg" alt="imagen usuario">
+                <p class="lead mt-3 name">Jose Eder Marcos Lara</p>
+                <p class="text-justify description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora velit eius distinctio consectetur laboriosam totam enim, ex quasi iusto eum, architecto maxime accusamus voluptatem, quis inventore repellat et cum?</p>
             </div>
-        </div> -->
+            <div class="col-md-8 mt-3 mt-md-0">
+                <span class="content-title mb-2">
+                    ¿Que tecnologias he ocupado?
+                </span>
+                <h2 class="text-center text-md-left">Mis <span class="font-weight-bold">Habilidades</span></h2>
+                <hr class="bg-primary">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">Android</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">Java</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%;">20%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">Php</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">css</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%;">55%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">sass</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">mysql</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%;">30%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">javascript</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">nodejs</p>
+                        <div class="progress text-left">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">mongodb(Mongoose)</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%;">30%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">angular</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">vue.js</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0 label text-uppercase">Bootsrap 4</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <!-- #4 Experiencia -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-12 text-center my-3">
-                <h2 class="font-weight-light">Experiencia</h3>
+        <div class="row content-4 mt-4 text-white py">
+            <div class="col p-0">
+                <div class="card">
+                    <div class="card-body bg-inverse">
+                        <div class="row justify-content-center pl-0 pr-0 pt-4 pb-4 p-md-4">
+                            <div class="col-12 text-center">
+                                <span class="content-title mb-2">
+                                    Mis oportunidades de trabajo
+                                </span>
+                                <h2 class="text-center mb-4">Mi <span class="font-weight-bold">Experiencia</span></h2>
+                            </div>
+
+
+                            <div class="col-auto align-self-center">
+                                <span class="d-inline-block p-3 content-4__date font-weight-bold m-0">
+                                    Nov 2017 - Nov 2017
+                                </span>
+                            </div>
+                            <div class="col-md-9 p-0 mb-4 mb-md-0">
+                                <div class="row m-0">
+                                    <!-- Icono -->
+                                    <div class="col-md-2 content-4__icon d-none d-md-flex justify-content-center align-items-center">
+                                        <div class="border-y h-100 bg-white"></div>
+                                        <div class="icon-content rounded-circle">
+                                            <i class="icon icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 my-3">
+                                        <div class="content-4__description bg-white p-3">
+                                            <a href="#">
+                                                <h3>Esfera Estudios</h3>
+                                                <span class="font-weight-light mr-1 text-muted">asa@gmail.com</span>
+                                                <span class="font-weight-light ml-1 text-muted">Av. Encino</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus tempora, alias dicta ipsum asperiores, ab nulla. Provident cum cupiditate reprehenderit amet inventore, enim, eos sint libero sit, facere natus.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto align-self-center">
+                                <span class="d-inline-block p-3 content-4__date font-weight-bold m-0">
+                                    Nov 2017 - Nov 2017
+                                </span>
+                            </div>
+                            <div class="col-md-9 p-0">
+                                <div class="row m-0">
+                                    <!-- Icono -->
+                                    <div class="col-md-2 content-4__icon d-none d-md-flex justify-content-center align-items-center">
+                                        <div class="border-y h-100 bg-white"></div>
+                                        <div class="icon-content rounded-circle">
+                                            <i class="icon icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 my-3">
+                                        <div class="content-4__description bg-white p-3">
+                                            <a href="#">
+                                                <h3>Esfera Estudios</h3>
+                                                <span class="font-weight-light mr-1 text-muted">asa@gmail.com</span>
+                                                <span class="font-weight-light ml-1 text-muted">Av. Encino</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus tempora, alias dicta ipsum asperiores, ab nulla. Provident cum cupiditate reprehenderit amet inventore, enim, eos sint libero sit, facere natus.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto align-self-center">
+                                <span class="d-inline-block p-3 content-4__date font-weight-bold m-0">
+                                    Nov 2017 - Nov 2017
+                                </span>
+                            </div>
+                            <div class="col-md-9 p-0">
+                                <div class="row m-0">
+                                    <!-- Icono -->
+                                    <div class="col-md-2 content-4__icon d-none d-md-flex justify-content-center align-items-center">
+                                        <div class="border-y h-100 bg-white"></div>
+                                        <div class="icon-content rounded-circle">
+                                            <i class="icon icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 my-3">
+                                        <div class="content-4__description bg-white p-3">
+                                            <a href="#">
+                                                <h3>Esfera Estudios</h3>
+                                                <span class="font-weight-light mr-1 text-muted">asa@gmail.com</span>
+                                                <span class="font-weight-light ml-1 text-muted">Av. Encino</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus tempora, alias dicta ipsum asperiores, ab nulla. Provident cum cupiditate reprehenderit amet inventore, enim, eos sint libero sit, facere natus.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto align-self-center">
+                                <span class="d-inline-block p-3 content-4__date font-weight-bold m-0">
+                                    Nov 2017 - Nov 2017
+                                </span>
+                            </div>
+                            <div class="col-md-9 p-0">
+                                <div class="row m-0">
+                                    <!-- Icono -->
+                                    <div class="col-md-2 content-4__icon d-none d-md-flex justify-content-center align-items-center">
+                                        <div class="border-y h-100 bg-white"></div>
+                                        <div class="icon-content rounded-circle">
+                                            <i class="icon icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 my-3">
+                                        <div class="content-4__description bg-white p-3">
+                                            <a href="#">
+                                                <h3>Esfera Estudios</h3>
+                                                <span class="font-weight-light mr-1 text-muted">asa@gmail.com</span>
+                                                <span class="font-weight-light ml-1 text-muted">Av. Encino</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus tempora, alias dicta ipsum asperiores, ab nulla. Provident cum cupiditate reprehenderit amet inventore, enim, eos sint libero sit, facere natus.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-auto align-self-center">
+                                <span class="d-inline-block p-3 content-4__date font-weight-bold m-0">
+                                    Nov 2017 - Nov 2017
+                                </span>
+                            </div>
+                            <div class="col-md-9 p-0">
+                                <div class="row m-0">
+                                    <!-- Icono -->
+                                    <div class="col-md-2 content-4__icon d-none d-md-flex justify-content-center align-items-center">
+                                        <div class="border-y h-100 bg-white"></div>
+                                        <div class="icon-content rounded-circle">
+                                            <i class="icon icon-briefcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 my-3">
+                                        <div class="content-4__description bg-white p-3">
+                                            <a href="#">
+                                                <h3>Esfera Estudios</h3>
+                                                <span class="font-weight-light mr-1 text-muted">asa@gmail.com</span>
+                                                <span class="font-weight-light ml-1 text-muted">Av. Encino</span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusamus tempora, alias dicta ipsum asperiores, ab nulla. Provident cum cupiditate reprehenderit amet inventore, enim, eos sint libero sit, facere natus.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- #5 Portafolio -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-12 text-center my-3">
-                <h2 class="font-weight-light">Portafolio</h3>
+        <div class="row content-5 mt-4">
+            <div class="col p-0">
+                <div class="card portafolio-content py-4">
+                    <div class="card-body">
+                        <div class="col-12 text-center">
+                            <span class="content-title mb-2">
+                                Mis proyectos recientes
+                            </span>
+                            <h2 class="font-weight-light">Portafolio</h3>
+                            <hr class="bg-light">
+                        </div>
+                        <div class="col p-0">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/70/70" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/245/160" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/245/260" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/300/200" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/200/300" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/400/300" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/400/500" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="http://lorempixel.com/350/200" alt="imagen1" class="card-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- #6 Contacto -->
-        <!-- <div class="row justify-content-center">
-            <div class="col-12 text-center my-3">
-                <h2 class="font-weight-light">Contacto</h3>
+        <div class="row justify-content-center my-3 p-4">
+            <div class="col-12 text-center">
+                <span class="content-title mb-2">
+                    Enviame un correo
+                </span>
+                <h2 class="font-weight-light">Contacto <span class="font-weight-bold">Directo</span></h3>
+                <hr class="bg-primary">
             </div>
             <div class="col-md-8">
                 <form action="#" method="post">
@@ -261,15 +553,15 @@
                                 <textarea class="form-control" name="message" id="message" placeholder="Mensaje:" rows="5"></textarea>
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+                        <div class="col-md-auto">
+                            <button type="submit" id="btn-submit" class="btn btn-primary btn-block">Enviar</button>
                         </div>
                     </div>
                 </form>
             </div>
-        </div> -->
+        </div>
 
-    </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Archivos JS bootstrap -->
