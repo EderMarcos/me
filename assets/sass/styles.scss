@@ -192,3 +192,13 @@ span.content-title {
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .content-4 {
+        &__border {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
