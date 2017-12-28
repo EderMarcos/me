@@ -125,40 +125,20 @@ span.content-title {
             }
         }
     }
-    //&__description {
-    //    $bg-border: rgba(122, 122, 122, 0.4);
-    //    $bg-text: #7A7A7A;
-    //    position: relative;
-    //    display: flex;
-    //    &:before {
-    //        content: "";
-    //        width: $side-size;
-    //        height: $side-size;
-    //        position: absolute;
-    //        background: #fff;
-    //        left: -$side-size / 2;
-    //        transform: rotate(45deg);
-    //        align-self: center;
-    //    }
-    //    a {
-    //        text-decoration: none;
-    //        color: $bg-inverse;
-    //        p {
-    //            color: $bg-text;
-    //            margin: 0;
-    //        }
-    //        span {
-    //            letter-spacing: 1px;
-    //            font-size: 0.9em;
-    //        }
-    //    }
-    //}
 }
 
 // #5 Portafolio
 .content-5 {
     .portafolio-content {
         border-top: 2px solid $color-accent;
+    }
+}
+#modal-content {
+    .modal-dialog {
+        transform: translate(0, -50%);
+        top: 50%;
+        margin: 0 auto;
+
     }
 }
 
