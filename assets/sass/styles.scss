@@ -97,13 +97,13 @@ span.content-title {
 // #4 Experiencia
 .content-4 {
     $side-size: 1.5em;
+    $icon-size: 70px;
 
     &__date {
         color: $bg-inverse;
         border-radius: 4px;
     }
     &__icon-content {
-        $icon-size: 70px;
         height: $icon-size;
         width: $icon-size;
         background: #fff;
@@ -116,7 +116,19 @@ span.content-title {
             font-size: 1.5em;
         }
     }
+    &__border {
+        &:after {
+            content: "";
+            width: 1px;
+            height: 100%;
+            background: #fff;
+            top: 0;
+            left: ($icon-size / 2);
+            position: absolute;
+        }
+    }
     &__card {
+        position: relative;
         a {
             text-decoration: none;
             color: $bg-inverse;
