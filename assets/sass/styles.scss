@@ -99,60 +99,60 @@ span.content-title {
     $side-size: 1.5em;
 
     &__date {
-        margin-top: $side-size / 2;
+        color: $bg-inverse;
+        border-radius: 4px;
+    }
+    &__icon-content {
+        $icon-size: 70px;
+        height: $icon-size;
+        width: $icon-size;
         background: #fff;
-        color: #000;
-    }
-
-    &__icon {
-        position: relative;
-        .border-y {
-            position: absolute;
-            width: 1px;
-        }
-        .icon-content {
-            position: absolute;
-            z-index: 10;
-            $icon-size: 50px;
-            height: $icon-size;
-            width: $icon-size;
-            background: #fff;
-            text-align: center;
-            .icon {
-                line-height: $icon-size;
-                color: $bg-inverse;
-                font-size: 1.5em;
-            }
+        text-align: center;
+        position: absolute;
+        z-index: 10;
+        .icon {
+            line-height: $icon-size;
+            color: $bg-inverse;
+            font-size: 1.5em;
         }
     }
-    &__description {
-        $bg-border: rgba(122, 122, 122, 0.4);
-        $bg-text: #7A7A7A;
-        position: relative;
-        display: flex;
-        &:before {
-            content: "";
-            width: $side-size;
-            height: $side-size;
-            position: absolute;
-            background: #fff;
-            left: -$side-size / 2;
-            transform: rotate(45deg);
-            align-self: center;
-        }
+    &__card {
         a {
             text-decoration: none;
             color: $bg-inverse;
-            p {
-                color: $bg-text;
-                margin: 0;
-            }
-            span {
-                letter-spacing: 1px;
-                font-size: 0.9em;
+            &:hover {
+                color: $color-accent;
             }
         }
     }
+    //&__description {
+    //    $bg-border: rgba(122, 122, 122, 0.4);
+    //    $bg-text: #7A7A7A;
+    //    position: relative;
+    //    display: flex;
+    //    &:before {
+    //        content: "";
+    //        width: $side-size;
+    //        height: $side-size;
+    //        position: absolute;
+    //        background: #fff;
+    //        left: -$side-size / 2;
+    //        transform: rotate(45deg);
+    //        align-self: center;
+    //    }
+    //    a {
+    //        text-decoration: none;
+    //        color: $bg-inverse;
+    //        p {
+    //            color: $bg-text;
+    //            margin: 0;
+    //        }
+    //        span {
+    //            letter-spacing: 1px;
+    //            font-size: 0.9em;
+    //        }
+    //    }
+    //}
 }
 
 // #5 Portafolio
@@ -164,7 +164,7 @@ span.content-title {
 
 // #6 Contacto
 .content-6 {
-    $size-social: 100px;
+    $size-social: 80px;
     &__fb, &__tw, &__in {
         height: $size-social;
         width: $size-social;
