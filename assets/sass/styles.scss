@@ -25,7 +25,9 @@ span.content-title {
         transform: rotate(45deg);
     }
 }
-
+.filter {
+    filter: brightness(0.5);
+}
 .bg-inverse {
     background: $bg-inverse;
 }
@@ -147,10 +149,10 @@ span.content-title {
 }
 #modal-content {
     .modal-dialog {
-        transform: translate(0, -50%);
-        top: 50%;
-        margin: 0 auto;
-
+        max-width: 1200px;
+        //transform: translate(0, -50%);
+        //top: 50%;
+        //margin: 0 auto;
     }
 }
 
@@ -189,6 +191,14 @@ span.content-title {
                 line-height: $size-social;
                 font-size: 2em;
             }
+        }
+    }
+
+    #modal-content {
+        .modal-dialog {
+            transform: translate(0, -50%);
+            top: 50%;
+            margin: 0 auto;
         }
     }
 }
