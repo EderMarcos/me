@@ -1,8 +1,14 @@
 $(function () {
+    var img = $('#img-modal-content');
     $('.card-columns .card').on('click', function () {
         $('#modal-content').modal();
         var path = ($(this).find('img').attr('src'));
-        $('#img-modal-content').attr('src', path);
+        img.attr('src', path);
+        if ($(this).find('img')[0].clientHeight > 200 && window.innerWidth > 500) {
+            img[0].style.width = '30%';
+        } else {
+            img[0].style.width = '90%';
+        }
     });
     $('#modal-content').on('click', function () {
         $('#modal-content').modal('hide');

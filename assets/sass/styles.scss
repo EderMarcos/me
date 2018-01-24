@@ -150,9 +150,16 @@ span.content-title {
 #modal-content {
     .modal-dialog {
         max-width: 1200px;
-        //transform: translate(0, -50%);
-        //top: 50%;
-        //margin: 0 auto;
+        transform: translate(0, -50%);
+        top: 50%;
+        margin: 0 auto;
+        .modal-content {
+            background: transparent;
+            img {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
     }
 }
 
